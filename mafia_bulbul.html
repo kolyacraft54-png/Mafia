@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мафія Бульбуляндії</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+        body { font-family: 'Comfortaa', cursive; }
+        .bg-lobby { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=1200&q=80') center/cover; }
+        .bg-night { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80') center/cover; }
+        .bg-day { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80') center/cover; }
+    </style>
+</head>
+<body class="bg-lobby text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="bg-amber-950/80 backdrop-blur-md p-8 rounded-3xl border-4 border-amber-500 max-w-md w-full text-center shadow-2xl">
+        <h1 class="text-3xl font-bold text-amber-300 mb-6 drop-shadow-md">🍇 Мафія Бульбуляндії 🍇</h1>
+        <div class="space-y-4">
+            <button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-2xl border-2 border-emerald-300 transition duration-200 transform hover:scale-105 shadow-lg">
+                Створити кімнату
+            </button>
+            <input type="text" placeholder="Введіть код кімнати" class="w-full text-center bg-amber-900/50 border-2 border-amber-400 rounded-2xl py-3 text-white placeholder-amber-200/50 focus:outline-none focus:border-amber-300">
+            <button class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 px-6 rounded-2xl border-2 border-amber-300 transition duration-200 transform hover:scale-105 shadow-lg">
+                Приєднатися
+            </button>
+        </div>
+    </div>
+</body>
+</html>
